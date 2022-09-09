@@ -17,7 +17,7 @@ router.get('/allReviews', async (req, res) => {
 	}
 }
 catch(e){
-	res.status(400).send({ Message: 'Something Went Wrong'});
+	res.status(400).json({ Message: 'Something Went Wrong'});
 }
 }
 );

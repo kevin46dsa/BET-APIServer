@@ -10,7 +10,7 @@ const constructorMethod = (app) => {
 	app.use('/public', publicRoutes); // No Middle Ware route should display all public Data
 
 	app.use('*', (req, res) => {
-		res.status(404).json({ error: 'Not Found' });
+		res.status(404).json({ error: 'Not Found'});
 	});
 };
 
