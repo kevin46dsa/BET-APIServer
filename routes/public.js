@@ -8,7 +8,7 @@ router.get('/allReviews', async (req, res) => {
 	 allReviews = await userDataFunctions.getAllReviews();
 	}
 	catch(e){
-		return res.status(400).send({ Message: 'Something Went Wrong'});
+		return res.status(400).json({ Message: 'Something Went Wrong'});
 	}
 	try{
 	if (allReviews) {
