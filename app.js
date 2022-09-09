@@ -104,7 +104,7 @@ app.use(async (req, res, next) => {
 
 configRoutes(app);
 
-app.listen(port || process.env.PORT, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Your routes will be running on port http://localhost/${port}`);
 });
 
