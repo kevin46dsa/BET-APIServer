@@ -17,7 +17,12 @@ const createUser = async (newFirstName, newLastName, newEmail, newPassword) => {
 	newEmail = dataValidation.checkEmail(newEmail);
 	dataValidation.checkPassword(newPassword);
 	newEmail = newEmail.toLowerCase(); // Makes every Email, Case Insensitive
-
+	try{
+		const userCollection = await allUsers();
+	}
+	catch(e){
+		console.log(e)
+	}
 	const userCollection = await allUsers();
 	//checks if user with the same email already exists
 	const userFound = await userCollection.findOne({ Email: newEmail });
