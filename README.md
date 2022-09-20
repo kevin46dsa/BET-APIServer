@@ -14,4 +14,4 @@
 3. Use Bet-Client To Budget Expenses more Efficiently
 <br /><sub><sup>*Please Note: Due to Heroku Free Hosting the site may take longer to load or may show Application error just simply refresh the page again for it to load*</sup></sub>
 
-# Features
+
